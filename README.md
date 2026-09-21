@@ -29,10 +29,8 @@ household size grows.
 
 | Cut | Hold | Double |
 |---|---|---|
-| Campaign 2 | Campaigns 1, 3, 4, 5 | The final campaign's approach |
-| Catalogs to low income and large households | | High income, one or two person households |
-| | | Wine and meat led offers |
-| | | Web for large families |
+| Campaign 2 | Campaigns 1, 3, 4, 5 | Campaigns targeting high income, small households with wine and meat led offers |
+| Catalogs to low income and large households | | Web for large families |
 
 ## Approach
 
