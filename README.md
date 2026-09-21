@@ -11,6 +11,22 @@ Most campaign results come from one campaign and one type of customer: high inco
 customers in small households. Campaign 2, and catalogs sent to low income and large 
 households, deliver almost nothing.
 
+## Dataset
+
+[Customer Personality Analysis](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis) 
+from Kaggle, covering 2,240 customers of a retail company between 2012 and 2014. 
+It includes customer demographics, spend across six product categories, purchases by 
+channel (web, catalog and store), and each customer's response to six marketing 
+campaigns. After cleaning, 2,229 customers were analysed.
+
+## Audit Questions
+
+1. Which campaigns delivered acceptable response rates, and which burned budget?
+2. Which customer segments actually convert, and which are we overspending to reach?
+3. Which product categories drive the most revenue, and are campaign responders the ones buying them?
+4. Which channels does each segment actually buy through?
+5. Given all this, what gets cut, what gets held, and what gets doubled?
+
 ## Key Findings
 
 - **Campaign performance splits sharply.** The final campaign converted at 14.8%, twice 
@@ -29,8 +45,9 @@ household size grows.
 
 | Cut | Hold | Double |
 |---|---|---|
-| Campaign 2 | Campaigns 1, 3, 4, 5 | Campaigns targeting high income, small households with wine and meat led offers |
-| Catalogs to low income and large households | | Web for large families |
+| Campaign 2 | Campaigns 1, 3, 4, 5 | The final campaign (14.8% response) |
+| Catalogs to low income and large households | | High income, small households, with wine and meat led offers |
+| | | Web for large families |
 
 ## Approach
 
@@ -46,5 +63,3 @@ channels, each with one chart and a headline finding.
 ## Tools
 
 Python, pandas, matplotlib, seaborn, Kaggle Notebooks
-
-**Data:** [Customer Personality Analysis](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis), Kaggle
