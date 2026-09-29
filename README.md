@@ -1,15 +1,15 @@
 # CMO Marketing Audit
 
 A marketing audit of six campaigns across 2,229 retail customers, identifying where 
-campaign effort pays off, where it is wasted, and what to change.
+campaign effort pays off, where it is likely wasted, and what to change.
 
 **[View the full notebook →](cmo-audit.ipynb)**
 
 ## Verdict
 
-Most campaign results come from one campaign and one type of customer: high income 
-customers in small households. Campaign 2, and catalog spend aimed at low income and 
-large households, deliver almost nothing.
+The strongest results come from one campaign and one type of customer: high income 
+customers in small households. Campaign 2 barely registered a response, and catalog 
+effort aimed at low income customers is likely wasted, since they rarely buy through it.
 
 ## Dataset
 
@@ -24,11 +24,11 @@ amounts are shown in $ for readability.
 
 ## Audit Questions
 
-1. Which campaigns delivered acceptable response rates, and which burned budget?
-2. Which customer segments respond to campaigns, and which are we overspending to reach?
+1. Which campaigns delivered acceptable response rates, and which fell short?
+2. Which customer segments respond to campaigns, and which rarely do?
 3. Which product categories drive the most revenue, and are campaign responders the ones buying them?
 4. Which channels does each segment actually buy through?
-5. Given all this, what's the reallocation? What gets cut, what gets doubled?
+5. Given all this, how should campaign effort be reallocated?
 
 ## Key Findings
 
@@ -52,16 +52,16 @@ up 77% of average spend, and responders outspend non-responders by 2.5x on wines
 
 ![Responder vs non-responder spend by category](images/responder_spend.png)
 
-**Catalog only works for high income customers.** Catalog share rises from 8.7% of low 
-income purchases to 29.5% of high income purchases, and falls from 28% to 13% as 
-household size grows. Store leads in every segment.
+**Catalog is mainly a high income channel.** Catalog share rises from 8.7% of low income 
+purchases to 29.5% of high income purchases, and falls from 28% to 13% as household 
+size grows. Store leads in every segment.
 
 ## Recommendation
 
 | Cut | Hold | Shift | Double |
 |---|---|---|---|
 | Campaign 2 | Campaigns 1, 3, 4, 5 | Marketing to large households, from catalog to web | The final campaign (14.8% response) |
-| Catalog spend aimed at low income and large households | | | High income, one and two person households |
+| Catalog effort aimed at low income customers | | | High income, one and two person households |
 | | | | Wine and meat led offers |
 
 ## Approach
@@ -85,4 +85,8 @@ reallocation.
 2. The notebook's file path is set for Kaggle. To run locally, place the CSV in the 
 same folder as the notebook and change the path in the load cell to 
 `marketing_campaign.csv`. The file is tab separated, so keep `sep="\t"`.
-3. Install the required libraries:
+3. Install the required libraries: `pip install pandas numpy matplotlib seaborn`
+
+## Tools
+
+Python, pandas, NumPy, matplotlib, seaborn, Kaggle Notebooks
