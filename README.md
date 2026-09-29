@@ -47,7 +47,7 @@ Age shows almost no effect.
 ![Response rate by income and household size](images/income_household_heatmap.png)
 
 **Wines and meat drive revenue and separate responders from non-responders.** They make 
-up 77% of average spend, and responders outspend non-responders by 2.5x on wines and 
+up 78% of average spend, and responders outspend non-responders by 2.5x on wines and 
 2.2x on meat, against roughly 1.6x in every other category.
 
 ![Responder vs non-responder spend by category](images/responder_spend.png)
