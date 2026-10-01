@@ -89,4 +89,4 @@ same folder as the notebook and change the path in the load cell to
 
 ## Tools
 
-Python, pandas, NumPy, matplotlib, seaborn, Kaggle Notebooks
+Python, pandas, matplotlib, seaborn, Kaggle Notebooks
